@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Account Summary</title>
+</head>
+
+<body>
+    <!-- --------------------navbar--------------------------- -->
+
+    <section class="bg-img">
+        <div class="backgrond-img">
+            <img src="assets/img/winter_afternoon.jpg" alt="">
+        </div>
+    </section>
+
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/img/wf_logo_220x23.webp" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav profile-hedr">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="signOffLink">
+                                <img src="assets/img/lock_icon.svg" alt="" width="14px" height="20px"
+                                    style="margin-right: 2px;">
+                                Sign Off
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                </svg> Welcome, DALE <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg></a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="below-nav-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="below-nav">
+                            <div class="acont-drop">Accounts <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg></div>
+                            <div class="acont-drop">Brokerage </div>
+                            <div class="acont-drop">Transfer & Pay <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg></div>
+                            <div class="acont-drop">Plan & Learn <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg></div>
+                            <div class="acont-drop">Security & Support <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="below-below-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="accontt-home"><img src="assets/img/home.png" alt="" width="16" height="16"> Account
+                            Summary</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- --------------------Body--------------------------- -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accont-summry-sec">
+                        <div class="row">
+                            <div class="col-lg-8">
+
+                                <div class="acnt-sum">
+                                    <h4>Profile Information</h4>
+                                </div>
+
+                                <div class="profileonfo-field">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span><b>Name:-</b> Laura T. Hume</span>
+                                            <!-- <div class="clnt-name">
+                                                
+                                            </div> -->
+                                        </div><br><br>
+                                        <div class="col-lg-6">
+                                            <span><b>D.O.B.:-</b> May, 10, 1987</span>
+                                            <!-- <div class="clnt-name">
+                                                
+                                            </div> -->
+                                        </div><br><br>
+                                        <div class="col-lg-6">
+                                            <span><b>Phone No:-</b> 923-983-9283</span>
+                                            <!-- <div class="clnt-name">
+                                                
+                                            </div> -->
+                                        </div><br><br>
+                                        <div class="col-lg-6">
+                                            <span> <b>Sec Phone No:-</b> 982-297-0829</span>
+                                            <!-- <div class="clnt-name">
+                                                
+                                            </div> -->
+                                        </div><br><br>
+                                        <div class="col-lg-6">
+                                            <span><b>Address:-</b> 4932 Mulberry Lane Boca Raton, FL 33487</span>
+                                            <!-- <div class="clnt-name">
+                                                
+                                            </div> -->
+                                        </div><br><br>
+                                        <div class="col-lg-6">
+                                            <span><b>Email(Permanent):-</b> lahslfhas@gmail.com</span>
+                                            <!-- <div class="clnt-name">
+                                                
+                                            </div> -->
+                                        </div><br><br>
+                                        <div class="col-lg-6">
+                                            <span><b>Email(Temporary):</b>- alkshlkaskflha@gmail.com</span>
+                                            <!-- <div class="clnt-name">
+                                                
+                                            </div> -->
+                                        </div><br><br>
+                                        <div class="col-lg-6">
+                                            <span><b>SSN:-</b> XXXX8273</span>
+                                            <!-- <div class="clnt-name">
+                                                
+                                            </div> -->
+                                        </div><br><br>
+                                    </div>
+                                </div>
+
+                                <div class="profileonfo-field">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+
+                                            <div class="clnt-details">
+                                                Login time:
+                                                Your IP Address:
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="profileonfo-field">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+
+                                            <div class="available-bal">
+                                                <h3>Available Balance:</h3>
+                                                <h3>$12,121212</h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="acnt-sum">
+                                    <h4>Account Summary</h4>
+                                    <div class="custom-icons">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                        </svg> Customize <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="aconct-card-bg-white">
+                                    <div class="dale-acont-card">
+                                        <div class="dale-name-crd"><img src="assets/img/card-icon.svg" alt="" width="30"
+                                                height="30">
+                                            <h4>Dale's Checking <br> <small>...4541</small> </h4>
+                                        </div>
+                                        <div class="balance">$9,825.42 <br> <small>Available balance</small></div>
+                                    </div>
+
+                                    <div class="two-below-txt">
+                                        <div class="below-txt-balance1">See how to get a $2,500 bonus</div>
+                                        <div class="below-txt-balance1">Start your next home project</div>
+                                    </div>
+                                </div>
+
+                                <div class="aconct-card-bg-white">
+                                    <div class="dale-acont-card">
+                                        <div class="dale-name-crd"><img src="assets/img/card-icon.svg" alt="" width="30"
+                                                height="30">
+                                            <h4>Dale's Checking <br> <small>...4541</small> </h4>
+                                        </div>
+                                        <div class="balance">$9,825.42 <br> <small>Available balance</small></div>
+                                    </div>
+
+                                    <div class="two-below-txt">
+                                        <div class="below-txt-balance1">See how to get a $2,500 bonus</div>
+                                        <div class="below-txt-balance1">Start your next home project</div>
+                                    </div>
+                                </div>
+
+                                <div class="aconct-card-bg-white">
+                                    <div class="dale-acont-card">
+                                        <div class="dale-name-crd"><img src="assets/img/card-icon.svg" alt="" width="30"
+                                                height="30">
+                                            <h4>Dale's Checking <br> <small>...4541</small> </h4>
+                                        </div>
+                                        <div class="balance">$9,825.42 <br> <small>Available balance</small></div>
+                                    </div>
+
+                                    <div class="two-below-txt">
+                                        <div class="below-txt-balance1">See how to get a $2,500 bonus</div>
+                                        <div class="below-txt-balance1">Start your next home project</div>
+                                    </div>
+                                </div>
+
+                                <div class="aconct-card-bg-white">
+                                    <div class="dale-acont-card">
+                                        <div class="dale-name-crd"><img src="assets/img/card-icon.svg" alt="" width="30"
+                                                height="30">
+                                            <h4>Dale's Checking <br> <small>...4541</small> </h4>
+                                        </div>
+                                        <div class="balance">$9,825.42 <br> <small>Available balance</small></div>
+                                    </div>
+
+                                    <div class="two-below-txt">
+                                        <div class="below-txt-balance1">See how to get a $2,500 bonus</div>
+                                        <div class="below-txt-balance1">Start your next home project</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="aconct-card-bg-white">
+                                    <div class="dale-acont-card">
+                                        <div class="dale-name-crd"><img src="assets/img/card-icon.svg" alt="" width="30"
+                                                height="30">
+                                            <h4>Dale's Checking <br> <small>...4541</small> </h4>
+                                        </div>
+                                        <div class="balance">$9,825.42 <br> <small>Available balance</small></div>
+                                    </div>
+
+                                    <div class="two-below-txt">
+                                        <div class="below-txt-balance1">See how to get a $2,500 bonus</div>
+                                        <div class="below-txt-balance1">Start your next home project</div>
+                                    </div>
+                                </div>
+
+                                <div class="aconct-card-bg-white">
+                                    <div class="dale-acont-card">
+                                        <div class="dale-name-crd"><img src="assets/img/card-icon.svg" alt="" width="30"
+                                                height="30">
+                                            <h4>Dale's Checking <br> <small>...4541</small> </h4>
+                                        </div>
+                                        <div class="balance">$9,825.42 <br> <small>Available balance</small></div>
+                                    </div>
+
+                                    <div class="two-below-txt">
+                                        <div class="below-txt-balance1">See how to get a $2,500 bonus</div>
+                                        <div class="below-txt-balance1">Start your next home project</div>
+                                    </div>
+                                </div>
+
+                                <div class="aconct-card-bg-white">
+                                    <div class="dale-acont-card">
+                                        <div class="dale-name-crd"><img src="assets/img/card-icon.svg" alt="" width="30"
+                                                height="30">
+                                            <h4>Dale's Checking <br> <small>...4541</small> </h4>
+                                        </div>
+                                        <div class="balance">$9,825.42 <br> <small>Available balance</small></div>
+                                    </div>
+
+                                    <div class="two-below-txt">
+                                        <div class="below-txt-balance1">See how to get a $2,500 bonus</div>
+                                        <div class="below-txt-balance1">Start your next home project</div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="right-card-img">
+                                    <img src="assets/img/profle-card-img.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------Footer--------------------------- -->
+
+    <section class="footer-bg-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-li">
+                        <ul>
+                            <li><a href="">About Wells Fargo</a></li>
+                            <li><a href="">Online Access Agreement</a></li>
+                            <li><a href="">Privacy, Cookies, Security & Legal</a></li>
+                            <li><a href="">Do not sell or share my personal information</a></li>
+                            <li><a href="">Notice of Data Collection</a></li>
+                            <li><a href="">Report Email Fraud</a></li>
+                            <li><a href="">Security Center</a></li>
+                            <li><a href="">Sitemap</a></li>
+                            <li><a href="">Give Us Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="CopyRight__copyright___LI402">© 1999 - 2025 <span lang="en">Wells Fargo.</span> All
+                        rights reserved. NMLSR ID 399801</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="assets/script.js"></script>
+
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const loginTime = sessionStorage.getItem("loginTime") || "Not available";
+            const userIp = sessionStorage.getItem("userIp") || "Not available";
+
+            const detailsDiv = document.querySelector(".clnt-details");
+            if (detailsDiv) {
+                detailsDiv.innerHTML = `
+                    <strong>Login time:</strong> ${loginTime}<br>
+                    <strong>Your IP Address:</strong> ${userIp}
+                `;
+            }
+        });
+    </script>
+
+    <script>
+        const signOffLink = document.getElementById("signOffLink");
+
+        if (signOffLink) {
+            signOffLink.addEventListener("click", (e) => {
+                e.preventDefault(); // Stop default link behavior
+
+                const signOffTime = new Date().toLocaleString();
+                sessionStorage.setItem("signOffTime", signOffTime);
+
+                // Optional: clear sessionStorage if you want to sign out completely
+                // sessionStorage.clear();
+
+                // Manually redirect
+                window.location.href = "signout.html";
+            });
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
